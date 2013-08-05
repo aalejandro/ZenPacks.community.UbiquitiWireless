@@ -198,9 +198,29 @@ True
 </object>
 </tomanycont>
 <tomanycont id='thresholds'>
+<object id='high signal' module='Products.ZenModel.MinMaxThreshold' class='MinMaxThreshold'>
+<property type="string" id="eventClass" mode="w" >
+/Net
+</property>
+<property type="int" id="severity" mode="w" >
+3
+</property>
+<property label="DataPoints" type="lines" id="dsnames" mode="w" >
+[]
+</property>
+<property label="Enabled" type="boolean" id="enabled" mode="w" >
+True
+</property>
+<property type="string" id="maxval" mode="w" >
+-50
+</property>
+<property type="int" id="escalateCount" mode="w" >
+96
+</property>
+</object>
 <object id='lan port unplugged' module='Products.ZenModel.MinMaxThreshold' class='MinMaxThreshold'>
 <property type="string" id="eventClass" mode="w" >
-/Perf/Snmp
+/Net/Link
 </property>
 <property type="int" id="severity" mode="w" >
 3
@@ -219,6 +239,26 @@ True
 </property>
 <property type="int" id="escalateCount" mode="w" >
 0
+</property>
+</object>
+<object id='low signal' module='Products.ZenModel.MinMaxThreshold' class='MinMaxThreshold'>
+<property type="string" id="eventClass" mode="w" >
+/Net
+</property>
+<property type="int" id="severity" mode="w" >
+3
+</property>
+<property label="DataPoints" type="lines" id="dsnames" mode="w" >
+['mca-status_signal']
+</property>
+<property label="Enabled" type="boolean" id="enabled" mode="w" >
+True
+</property>
+<property type="string" id="minval" mode="w" >
+-75
+</property>
+<property type="int" id="escalateCount" mode="w" >
+96
 </property>
 </object>
 </tomanycont>
