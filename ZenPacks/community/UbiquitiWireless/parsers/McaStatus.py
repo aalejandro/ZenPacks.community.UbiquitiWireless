@@ -4,7 +4,7 @@
 # Revised:
 #
 #
-# This program can be used under the GNU General Public License version 2
+# This program can be used under the GNU LESSER GENERAL PUBLIC LICENSE version 3
 # You can find full information here: http://www.zenoss.com/oss
 #
 ##########################################################################
