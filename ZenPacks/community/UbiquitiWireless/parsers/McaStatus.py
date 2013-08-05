@@ -1,3 +1,14 @@
+##########################################################################
+# Author:               Abel Alejandro,  abel@aalejandro.com
+# Date:                 August 8th, 2013
+# Revised:
+#
+#
+# This program can be used under the GNU General Public License version 2
+# You can find full information here: http://www.zenoss.com/oss
+#
+##########################################################################
+
 import re
 
 from Products.ZenUtils.Utils import getExitMessage
