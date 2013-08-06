@@ -18,6 +18,9 @@ Ubiquiti Networks
 <property visible="True" type="lines" id="zDeviceTemplates" >
 ['Device', 'UbiquitiWireless']
 </property>
+<property visible="True" type="string" id="zPythonClass" >
+ZenPacks.community.UbiquitiWireless.UbiquitiWirelessDevice
+</property>
 <tomanycont id='rrdTemplates'>
 <object id='UbiquitiWireless' module='Products.ZenModel.RRDTemplate' class='RRDTemplate'>
 <property type="string" id="targetPythonClass" mode="w" >
