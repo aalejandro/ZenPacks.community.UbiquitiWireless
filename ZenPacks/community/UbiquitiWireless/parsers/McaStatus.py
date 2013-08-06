@@ -29,10 +29,10 @@ class McaStatus(CommandParser):
         for label, quote_label, value in perfParser.findall(rawPerfData):
             if quote_label:
                 label = quote_label
-            try:
-                value = float(value.strip())
-            except:
-                value = 'U'
+#            try:
+#                value = float(value.strip())
+#            except:
+#                value = 'U'
             perfData[label] = value
 
         return perfData
