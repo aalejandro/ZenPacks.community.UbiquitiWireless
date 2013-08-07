@@ -21,6 +21,9 @@ Ubiquiti Networks
 <property visible="True" type="string" id="zPythonClass" >
 ZenPacks.community.UbiquitiWireless.UbiquitiWirelessDevice
 </property>
+<property visible="True" type="lines" id="zCollectorPlugins" >
+['zenoss.snmp.NewDeviceMap', 'zenoss.snmp.DeviceMap', 'zenoss.snmp.InterfaceMap', 'zenoss.snmp.RouteMap', 'community.snmp.UbiquitiDevice']
+</property>
 <tomanycont id='rrdTemplates'>
 <object id='UbiquitiWireless' module='Products.ZenModel.RRDTemplate' class='RRDTemplate'>
 <property type="string" id="targetPythonClass" mode="w" >

@@ -1,21 +1,8 @@
-######################################################################
-#
-# UbiquitiAccessPointDevice modeler plugin
-#
-######################################################################
-
-__doc__="""UbiquitiAccessPointDevice
-
-UbiquitiAccessPointDevice sets up hardware / software manufacturer
-and sets other information.
-
-$Id: $"""
-
 from Products.DataCollector.plugins.CollectorPlugin import SnmpPlugin, GetMap
 from Products.DataCollector.plugins.DataMaps import ObjectMap, MultiArgs
 
-class UbiquitiADevice(SnmpPlugin):
-    maptype = "UbiquitiAccessPointDevice"
+class UbiquitiDevice(SnmpPlugin):
+    maptype = "UbiquitiDevice"
     
     snmpGetMap = GetMap({
         '.1.2.840.10036.1.1.1.9.5' :  'essid',
@@ -34,8 +21,8 @@ class UbiquitiADevice(SnmpPlugin):
         getdata, tabledata = results
         
 # Uncomment next 2 lines for debugging when modeling
-        log.debug( "Get Data= %s", getdata )
-        log.debug( "Table Data= %s", tabledata )
+#        log.debug( "Get Data= %s", getdata )
+#        log.debug( "Table Data= %s", tabledata )
         try:
             om = self.objectMap(getdata)
 	    om.setHWProductKey = MultiArgs(om.setHWProductKey, "Ubiquiti")
