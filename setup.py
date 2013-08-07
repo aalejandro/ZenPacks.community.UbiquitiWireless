@@ -4,7 +4,7 @@
 # NB: PACKAGES is deprecated
 NAME = "ZenPacks.community.UbiquitiWireless"
 VERSION = "0.9.0"
-AUTHOR = "Abel Alejandro"
+AUTHOR = "Abel Alejandro <abel@aalejandro.com>"
 LICENSE = "LGPL"
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.community']
 PACKAGES = ['ZenPacks', 'ZenPacks.community', 'ZenPacks.community.UbiquitiWireless']
