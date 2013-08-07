@@ -119,7 +119,7 @@ True
 </object>
 <object id='wlanRxErrBmiss' module='Products.ZenModel.RRDDataPoint' class='RRDDataPoint'>
 <property select_variable="rrdtypes" type="selection" id="rrdtype" mode="w" >
-DERIVE
+GAUGE
 </property>
 <property type="boolean" id="isrow" mode="w" >
 True
@@ -130,7 +130,7 @@ True
 </object>
 <object id='wlanRxErrCrypt' module='Products.ZenModel.RRDDataPoint' class='RRDDataPoint'>
 <property select_variable="rrdtypes" type="selection" id="rrdtype" mode="w" >
-DERIVE
+GAUGE
 </property>
 <property type="boolean" id="isrow" mode="w" >
 True
@@ -141,7 +141,7 @@ True
 </object>
 <object id='wlanRxErrFrag' module='Products.ZenModel.RRDDataPoint' class='RRDDataPoint'>
 <property select_variable="rrdtypes" type="selection" id="rrdtype" mode="w" >
-DERIVE
+GAUGE
 </property>
 <property type="boolean" id="isrow" mode="w" >
 True
@@ -152,7 +152,7 @@ True
 </object>
 <object id='wlanRxErrNwid' module='Products.ZenModel.RRDDataPoint' class='RRDDataPoint'>
 <property select_variable="rrdtypes" type="selection" id="rrdtype" mode="w" >
-DERIVE
+GAUGE
 </property>
 <property type="boolean" id="isrow" mode="w" >
 True
@@ -163,7 +163,7 @@ True
 </object>
 <object id='wlanRxErrOther' module='Products.ZenModel.RRDDataPoint' class='RRDDataPoint'>
 <property select_variable="rrdtypes" type="selection" id="rrdtype" mode="w" >
-DERIVE
+GAUGE
 </property>
 <property type="boolean" id="isrow" mode="w" >
 True
@@ -174,7 +174,7 @@ True
 </object>
 <object id='wlanRxErrRetries' module='Products.ZenModel.RRDDataPoint' class='RRDDataPoint'>
 <property select_variable="rrdtypes" type="selection" id="rrdtype" mode="w" >
-DERIVE
+GAUGE
 </property>
 <property type="boolean" id="isrow" mode="w" >
 True
@@ -193,7 +193,7 @@ True
 </object>
 <object id='wlanTxErrors' module='Products.ZenModel.RRDDataPoint' class='RRDDataPoint'>
 <property select_variable="rrdtypes" type="selection" id="rrdtype" mode="w" >
-DERIVE
+GAUGE
 </property>
 <property type="boolean" id="isrow" mode="w" >
 True
@@ -745,7 +745,7 @@ AVERAGE
 500
 </property>
 <property type="string" id="units" mode="w" >
-errors/sec
+errors
 </property>
 <property type="boolean" id="log" mode="w" >
 False
@@ -950,7 +950,7 @@ AVERAGE
 500
 </property>
 <property type="string" id="units" mode="w" >
-errors/sec
+errors
 </property>
 <property type="boolean" id="log" mode="w" >
 False
@@ -962,7 +962,7 @@ False
 0
 </property>
 <property type="int" id="maxy" mode="w" >
-1000
+-1
 </property>
 <property type="boolean" id="hasSummary" mode="w" >
 True
